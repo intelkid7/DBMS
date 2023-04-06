@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukaan</title>
+</head>
+<link rel="stylesheet", href="stylesheettest.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&family=Rubik:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet"> 
+<div><img src="logo.png" alt="" class="logo"></div>
+<body style="backdrop-filter: blur(7px);">
+    <form action="/" method="POST">
+        <div class="regcont">
+            <div style="position: relative; top: 20px; color: rgb(0, 0, 0);">Register</div>
+            <div style="position: relative; top: 45px; left: -180px; color: rgb(0, 0, 0); font-size: 17px;">Name</div>
+            <input type="text" class="username" name="name" style="color: rgb(255, 255, 255); margin-bottom: 10px; margin-top: 5px; text-indent: 20px;" required>
+            <div style="position: relative; top: 45px; left: -160px; color: rgb(0, 0, 0); font-size: 17px;">Store name</div>
+            <input type="text" class="username" name="shop_name" style="color: rgb(255, 255, 255); margin-bottom: 10px;  margin-top: 5px; text-indent: 20px;" required>
+            <div style="position: relative; top: 45px; left: -165px; color: rgb(0, 0, 0); font-size: 17px;">Username</div>
+            <input type="text" class="username" name="username" style="color: rgb(255, 255, 255); margin-bottom: 10px;  margin-top: 5px; text-indent: 20px;" required>
+            <div style="position: relative; top: 45px; left:  -175px; color: rgb(0, 0, 0); font-size: 17px;">Email ID</div>
+            <input type="email" class="username" name="email" style="color: rgb(255, 255, 255); margin-bottom: 10px;  margin-top: 5px; text-indent: 20px;" required>
+            <div style="position: relative; top: 45px; left: -165px; color: rgb(0, 0, 0); font-size: 17px;">Password</div>
+            <input id = "pass" type="password" class="username" name="pass" style="color: rgb(255, 255, 255); margin-bottom: 10px;  margin-top: 5px; text-indent: 20px;" required>
+            <input type="submit" value="Register" class="regbut"style="position: relative; top: 75px;">
+        </div>
+    </form>
+</body>
+
+<!-- <script>
+    var myInput = document.getElementsByName("pass");
+    var letter = document.getElementsByName("letter");
+    var capital = document.getElementsByName("capital");
+    var number = document.getElementsByName("number");
+    var length = document.getElementByName("length");
+    
+    // When the user clicks on the password field, show the message box
+    myInput.onfocus = function() {
+      document.getElementById("message").style.display = "block";
+    }
+    
+    // When the user clicks outside of the password field, hide the message box
+    myInput.onblur = function() {
+      document.getElementById("message").style.display = "none";
+    }
+    
+    // When the user starts to type something inside the password field
+    myInput.onkeyup = function() {
+      // Validate lowercase letters
+      var lowerCaseLetters = /[a-z]/g;
+      if(myInput.value.match(lowerCaseLetters)) {
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+    }
+    
+      // Validate capital letters
+      var upperCaseLetters = /[A-Z]/g;
+      if(myInput.value.match(upperCaseLetters)) {
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+    
+      // Validate numbers
+      var numbers = /[0-9]/g;
+      if(myInput.value.match(numbers)) {
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+    
+      // Validate length
+      if(myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+    }
+    </script> -->
+</html>

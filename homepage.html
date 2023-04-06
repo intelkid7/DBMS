@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukaan</title>
+</head>
+<link rel="stylesheet", href="stylesheet0.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&family=Rubik:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet"> 
+<body>
+    <div style="position: relative; color: rgb(255, 255, 255); font-size: 150px; text-indent: 30px; font-family: 'Plus Jakarta Sans', sans-serif; top: 150px">WEL</div>
+    <div style="position: relative; color: rgb(255, 255, 255); font-size: 150px; text-indent: 30px; font-family: 'Plus Jakarta Sans', sans-serif; top: 150px">COME</div>
+    <div class="para1" id="par1">JOIN THE CHANGE</div>
+    <p class="para2" id="desc1">
+        Manage your business like a pro
+    </p>
+    <script>
+        window.addEventListener('scroll', () => {
+            let num = (window.scrollY/window.outerHeight)*3;
+            const cursc = window.pageYOffset;
+
+            if(cursc <= 300){
+                opacity = cursc/300;
+            }
+            else{
+                opacity = 1;
+            }
+            document.querySelector('.para1').style.opacity = opacity;
+            document.querySelector('.para2').style.opacity = opacity;
+            // document.getElementById('.bgimg').style.webkitFilter = 'blur(' + num + 'px)'
+        })
+    </script>
+    <header>
+        <div class="left">
+            <img src="logo.png" alt="" class="logo">
+        </div>
+        <div class="mid">
+        </div>
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="#"><strong>Home </strong></a></li>
+                <li><a href="#"><strong>About us</strong></a></li>
+                <li><a href="#"><strong>Contanct Us</strong></a></li>
+                <li><a href="http://127.0.0.1:3000/login.html"><strong>Login</strong></a></li>
+                <li><a href="http://127.0.0.1:3000/signup.html"><strong>Sign Up</strong></a></li>
+            </ul> 
+        </div>
+    </header>
+</body>
+</html>

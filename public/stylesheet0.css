@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(webbg.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 1000vh;
+}
+
+.body2{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+    height: 670px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3;
+    border-radius: 30px;
+    /* filter: blur(4px); */
+}
+
+.body3{
+    margin-left: 800px;
+    /* margin-right: 1px; */
+    margin-top: -560px;
+    height: 650px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
+    border-radius: 30px;
+    /* filter: blur(4px); */
+}
+
+.left {
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+}
+
+.right{
+    display: inline-block;
+    right: 33px;
+    top: 0px;
+    position: fixed;
+    /* border: 2px solid yellow; */
+}
+
+.mid{
+    display: block;
+    width: 40%;
+    margin-left: 500px;
+    top: 15px;
+}
+
+.logo{
+    transform: scale(0.2);
+    margin-top: -100px;
+    margin-left: -350px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: inline-block;
+    margin-top: 35px;
+}
+.navbar li{
+    display: inline-block;
+}
+
+.navbar li a{
+    color: black;
+    text-decoration: none;
+    padding: 34px 23px;
+    font-size: 19px;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.navbar li a :hover{
+    color: white;
+}
+
+.regcont{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+    width: 500px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    background: rgba(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), 0.6);
+    opacity: 0.7;
+    position: relative;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.username{
+    width: 450px;
+    height: 45px;
+    top: 45px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    opacity: 0.9;
+    position: relative;
+    border-radius: 60px;
+    text-align: left 20px;
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* cursor: pointer; */
+}
+
+.para1{
+    position: relative; 
+    color: black; 
+    font-size: 45px; 
+    text-indent: 30px; 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    top: 400px; 
+    text-align: center; 
+    opacity: 1;
+    /* transform: scale(0.1); */
+    transition: opacity 0.1s;
+}
+
+.para2{
+    position: relative; 
+    color: rgb(255, 255, 255); 
+    font-size: 40px;
+    text-indent: 30px; 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    top: 400px; 
+    text-align: center; 
+    opacity: 1;
+    /* transform: scale(0.1); */
+    transition: opacity 0.1s;
+}
+
+.active{
+    opacity: 1;
+    transform: scale(1); 
+}
+
+.regbut{
+    width: 300px;
+    height: 45px;
+    top: 45px;
+    background-color: rgb(7, 58, 244);
+    border: none;
+    opacity: 0.9;
+    position: relative;
+    border-radius: 60px;
+    text-align: left 20px;
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.regcont :hover > .regbut{
+    background-color: rgb(7, 58, 244);
+    box-shadow: 0 0 10px rgb(7, 58, 244);;
+}
+
+.regcont :hover > .username{
+    box-shadow: 0 0 10px rgb(7, 58, 244);
+}
+
